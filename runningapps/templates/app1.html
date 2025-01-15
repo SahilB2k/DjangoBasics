@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+
+
+
+{% block styles %}
+<style>
+.proj-set{
+  background-color: black;
+  color:white;
+}
+
+</style>
+
+{% endblock styles %}
+
+{% block content %}
+
+
+{% for img in images  %}
+  <div class="proj-set">
+      <img src="{{img.image.url}}" alt="image" srcset="">
+      <h2>{{img.name}}</h2>
+  </div>
+
+
+{% endfor %}
+
+{% endblock content %}
+
