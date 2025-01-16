@@ -7,5 +7,6 @@ app_name='Study'
 urlpatterns = [
    
     path('', views.home,name='home'),
-    path('project1/', views.project1),
+    path('Notes/', views.project1,name='notes'),
+    path('Stopwatch/', views.Stopwatch,name='stopwatch'),
 ]

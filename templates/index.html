@@ -18,6 +18,15 @@
             width: 100%;   /* Ensure the image spans the card's width */
             object-fit: cover; /* Ensures the image is cropped proportionally */
           }
+        a .study{
+          text-decoration: None;
+        }
+        .btns{
+          margin-top:20px;
+        }
+        .btns a button{
+          padding:5px;
+        }
     </style>
 </head>
 <body>
@@ -25,7 +34,7 @@
     <nav>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">MyCart</a>
+              <a class="navbar-brand" href={% url "home" %}>MyCart</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -36,7 +45,7 @@
                   </li>
                   <li class="nav-item">
                     {% comment %} <a class="nav-link" href={% url "Study:home" %}>Fruits</a> {% endcomment %}
-                    <a class="nav-link" href={% url "fruits" %}>Fruits</a>
+                    <a class="nav-link" href={% url "fruits" %}>About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href={% url "gadgets" %}>Gadgets</a>
@@ -51,6 +60,13 @@
           </nav>
 
     </nav>
+
+    <div class="btns">
+
+      <a href={% url "home" %}><button >  MyCart </button></a>
+      <a href={% url "Study:home" %}> <button >  StudyMaterial </button>  </a>
+
+    </div>
 
     <main>
 

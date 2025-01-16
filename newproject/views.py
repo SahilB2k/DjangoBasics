@@ -7,4 +7,7 @@ def home(request):
 
 
 def project1(request):
-    return HttpResponse("  ")
+    return render(request,'notes.html')
+
+def Stopwatch(request):
+    return render(request,'watch.html')

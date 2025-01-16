@@ -8,7 +8,7 @@ from django.contrib import messages
 def home(request):
     return render(request,'index.html')
 def about(request):
-    return HttpResponse("This is the about page!!")
+    return render(request,'about.html')
 def store(request):
     return HttpResponse("this is the store page!!")
 
